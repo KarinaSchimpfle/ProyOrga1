@@ -1,0 +1,24 @@
+Directorio compartido de acceso remoto
+======================================
+
+IMPORTANTE: NO BORRAR NI RENOMBRAR ESTE DIRECTORIO
+
+Los archivos creados dentro de este directorio son accesibles desde el host mediante el protocolo SMB/CIFS (Samba).
+
+Acceso desde hosts Windows
+--------------------------
+
+- Abrir el explorador de archivos (tecla de Windows + 'e').
+- En la barra de direcciones ingresar:
+
+    \\192.168.56.200\Compartido
+
+Acceso desde hosts Linux/*BSD/OS X
+----------------------------------
+
+- Abrir un gestor/navegador de archivos.
+- En la barra de direcciones ingresar:
+
+    smb://192.168.56.200/Compartido
+
+Es necesario contar con el paquete "samba" instalado.
